@@ -1,4 +1,6 @@
+
 import { MapPin, Phone, Mail, MessageSquare, Send } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import aetherlogikLogo from '@/assets/aetherlogik-logo.png';
 
 const Footer = () => {
@@ -152,24 +154,24 @@ const Footer = () => {
               © {currentYear} AetherLogik. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
-              <button 
-                onClick={() => scrollToSection('contact')}
+              <Link 
+                to="/privacy-policy"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 Privacy Policy
-              </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
+              </Link>
+              <Link 
+                to="/terms-of-service"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 Terms of Service
-              </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
+              </Link>
+              <Link 
+                to="/support"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 Support
-              </button>
+              </Link>
             </div>
           </div>
         </div>
