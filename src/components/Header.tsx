@@ -18,13 +18,13 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-4">
             <img 
               src={aetherlogikLogo} 
               alt="AetherLogik Logo" 
-              className="h-10 w-auto"
+              className="h-12 w-auto md:h-14"
             />
-            <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            <span className="text-2xl md:text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               AetherLogik
             </span>
           </div>
